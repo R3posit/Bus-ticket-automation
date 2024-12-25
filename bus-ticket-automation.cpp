@@ -22,7 +22,7 @@ void kerem() {
 }
 
 void goodBye() {
-     	printf("›");
+     	printf("√ù");
 		Sleep(150);
 		printf("y");
 		Sleep(150);
@@ -30,7 +30,7 @@ void goodBye() {
 		Sleep(150);
 		printf(" G");
 		Sleep(150);
-		printf("¸");
+		printf("√º");
 		Sleep(150);
 		printf("n");
 		Sleep(150);
@@ -52,12 +52,12 @@ int loadAnimation() {
 	while(i < 5) {
 		printf("|");
      	Sleep(70);
-		printf("Ø");
+		printf("¬Ø");
 		Sleep(70);
 		printf("|");
 		Sleep(70);
 		printf("\n");
-		printf(" Ø");
+		printf(" ¬Ø");
 		Sleep(70);
 	
 	i += 1;
@@ -75,23 +75,23 @@ int main() {
     setlocale(LC_ALL, "Turkish");
 	kerem();
 	printf("------- Syncrof Seyahat ------- \n");
-    printf("L¸tfen Gerekli Bilgileri Doldurunuz:");
-    printf("\n÷renci Numaran˝z: ");
+    printf("L√ºtfen Gerekli Bilgileri Doldurunuz:");
+    printf("\n√ñ√∞renci Numaran√Ωz: ");
     scanf("%d", &ogrenciNumarasi);
     Sleep(150);
     
     system("cls"); 
     
     printf("------- Syncrof Seyahat ------- \n");
-    printf("L¸tfen Gerekli Bilgileri Doldurunuz:");
-    printf("\n›sim: ");
+    printf("L√ºtfen Gerekli Bilgileri Doldurunuz:");
+    printf("\n√ùsim: ");
 	scanf(" %s", &adSoyad);
 	Sleep(150);
 	
 	system("cls"); 
 	
     printf("------- Syncrof Seyahat ------- \n");
-    printf("L¸tfen Gerekli Bilgileri Doldurunuz:");
+    printf("L√ºtfen Gerekli Bilgileri Doldurunuz:");
     printf("\nCinsiyet: ");
 	scanf(" %c", &cinsiyet);
 
@@ -100,10 +100,10 @@ int main() {
     
     int i;
     printf("------- Syncrof Seyahat ------- \n");
-    printf("|  Ho˛geldiniz Say˝n: %s!\n", adSoyad);
-    printf("|  ÷renci Numaran˝z: %d\n", ogrenciNumarasi);
+    printf("|  Ho√ægeldiniz Say√Ωn: %s!\n", adSoyad);
+    printf("|  √ñ√∞renci Numaran√Ωz: %d\n", ogrenciNumarasi);
     printf("| Yeni bir rezervasyona ne dersiniz? ");
-    printf("\n(Evet = E / Hay˝r = H) : ");
+    printf("\n(Evet = E / Hay√Ωr = H) : ");
     
 
     
@@ -113,18 +113,18 @@ int main() {
 
 	
     if(yanit[0] == 'e' || yanit[0] == 'E') {
-        // Rezervasyon ›˛lemleri
+        // Rezervasyon √ù√ælemleri
        
         
-        // SeÁilmi˛ koltuklar˝n al˝nmas˝
-        int doluKoltuklar[40]; // Boyutlar˝n ayarlanmas˝
+        // Se√ßilmi√æ koltuklar√Ωn al√Ωnmas√Ω
+        int doluKoltuklar[40]; // Boyutlar√Ωn ayarlanmas√Ω
         
         
 		for(int i = 0; i < 40; i++) {
 			doluKoltuklar[i] = -15;
 		}
 		
-        int cinsiyetList[40]; // Boyutlar˝n ayarlanmas˝
+        int cinsiyetList[40]; // Boyutlar√Ωn ayarlanmas√Ω
         for(int i = 0; i < 40; i++) {
 			cinsiyetList[i] = -11;
 		}
@@ -270,12 +270,12 @@ int main() {
 	   }
     	
     	printf("\n\n\n");
-    	printf("------- Rezervasyon Noktas˝ SeÁimi -------\n");
-    	printf("| 1 - Sa Cam Kenar˝\n");
-    	printf("| 2 - Sa Koridor\n");
+    	printf("------- Rezervasyon Noktas√Ω Se√ßimi -------\n");
+    	printf("| 1 - Sa√∞ Cam Kenar√Ω\n");
+    	printf("| 2 - Sa√∞ Koridor\n");
     	printf("| 3 - Sol Koridor\n");
-    	printf("| 4 - Sol Cam Kenar˝\n");
-    	printf("| 5 - «˝k\n");
+    	printf("| 4 - Sol Cam Kenar√Ω\n");
+    	printf("| 5 - √á√Ωk\n");
 
 		int tercih;
 		scanf("%d", &tercih);
@@ -287,7 +287,7 @@ int main() {
     	switch(tercih) {
     		case 1: {
 				
-    		    // Sa Cam Kenar˝ Tercih Edildi
+    		    // Sa√∞ Cam Kenar√Ω Tercih Edildi
     			// [ X ]
                 int doluOlmayanKoltuklar[100];
                 for(int i = 0; i < 100; i++) {
@@ -322,11 +322,11 @@ int main() {
 				}
 				
 				
-				 // KOLTUK SE«›M›
-				 // seÁilemeyen say˝lar˝ tercih edemez
+				 // KOLTUK SE√á√ùM√ù
+				 // se√ßilemeyen say√Ωlar√Ω tercih edemez
 				 int secilenKoltukNumarasi;
 				 
-				 printf("\n L¸tfen Koltuk SeÁiniz: ");
+				 printf("\n L√ºtfen Koltuk Se√ßiniz: ");
 				 scanf("%d", &secilenKoltukNumarasi);
 				
 				 int secilebilirMi = 0;
@@ -337,12 +337,12 @@ int main() {
 				 }
 				 
 				 if(secilebilirMi == 0) {
-				 	printf("Bu koltuk seÁilemez.");
+				 	printf("Bu koltuk se√ßilemez.");
 				 	
 				 } else {
 				 	
 				 	if(secilenKoltukNumarasi % 2 == 0) {
-				 		// secilen koltuk Áift numarali
+				 		// secilen koltuk √ßift numarali
 				 		int doluKoltuklardaVarMi = 0;
 				 		int doluSorguIndisi;
 				 		for(int i = 0; i < 40; i++) {
@@ -354,13 +354,13 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	   break;
 						    } else {
-						    	printf("Bu koltuk seÁilemez.");
+						    	printf("Bu koltuk se√ßilemez.");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 					    
@@ -378,13 +378,13 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz..."); 
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz..."); 
 						 	   break;
 						    } else {
-						    	printf("Bu koltuk seÁilemez.");
+						    	printf("Bu koltuk se√ßilemez.");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 					 }
@@ -403,7 +403,7 @@ int main() {
     		case 2: {
 			
 			
-    			// Sa Koridor Teercih Edildi
+    			// Sa√∞ Koridor Teercih Edildi
     			// [ X ]
                 
                 int doluOlmayanKoltuklar[100];
@@ -439,11 +439,11 @@ int main() {
 				}
 				
 				
-				 // KOLTUK SE«›M›
-				 // seÁilemeyen say˝lar˝ tercih edemez
+				 // KOLTUK SE√á√ùM√ù
+				 // se√ßilemeyen say√Ωlar√Ω tercih edemez
 				 int secilenKoltukNumarasi;
 				 
-				 printf("\n L¸tfen Koltuk SeÁiniz: ");
+				 printf("\n L√ºtfen Koltuk Se√ßiniz: ");
 				 scanf("%d", &secilenKoltukNumarasi);
 				
 				 int secilebilirMi = 0;
@@ -454,13 +454,13 @@ int main() {
 				 }
 				 
 				 if(secilebilirMi == 0) {
-				 	printf("Bu koltuk seÁilemez.");
+				 	printf("Bu koltuk se√ßilemez.");
 				 	
 				 	
 				 } else {
 				 	
 				 	if(secilenKoltukNumarasi % 2 == 0) {
-				 		// secilen koltuk Áift numarali
+				 		// secilen koltuk √ßift numarali
 				 		int doluKoltuklardaVarMi = 0;
 				 		int doluSorguIndisi;
 				 		for(int i = 0; i < 40; i++) {
@@ -472,13 +472,13 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	   break;
 						    } else {
-						    	printf("Bu koltuk seÁilemez.");
+						    	printf("Bu koltuk se√ßilemez.");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 						 
@@ -497,12 +497,12 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz..."); 
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz..."); 
 						    } else {
-						    	printf("Bu koltuk seÁilemez.\n");
+						    	printf("Bu koltuk se√ßilemez.\n");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 }
 					 }
 				 	
@@ -554,11 +554,11 @@ int main() {
 				}
 				
 				
-				 // KOLTUK SE«›M›
-				 // seÁilemeyen say˝lar˝ tercih edemez
+				 // KOLTUK SE√á√ùM√ù
+				 // se√ßilemeyen say√Ωlar√Ω tercih edemez
 				 int secilenKoltukNumarasi;
 				 
-				 printf("\n L¸tfen Koltuk SeÁiniz: ");
+				 printf("\n L√ºtfen Koltuk Se√ßiniz: ");
 				 scanf("%d", &secilenKoltukNumarasi);
 				
 				 int secilebilirMi = 0;
@@ -569,13 +569,13 @@ int main() {
 				 }
 				 
 				 if(secilebilirMi == 0) {
-				 	printf("Bu koltuk seÁilemez.\n");
+				 	printf("Bu koltuk se√ßilemez.\n");
 				 	
 				 	
 				 } else {
 				 	
 				 	if(secilenKoltukNumarasi % 2 == 0) {
-				 		// secilen koltuk Áift numarali
+				 		// secilen koltuk √ßift numarali
 				 		int doluKoltuklardaVarMi = 0;
 				 		int doluSorguIndisi;
 				 		for(int i = 0; i < 40; i++) {
@@ -588,14 +588,14 @@ int main() {
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
 						 	  
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	   break;
 						    } else {
-						    	printf("Bu koltuk seÁilemez.");
+						    	printf("Bu koltuk se√ßilemez.");
 							}
 						 } else {
 						 	
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 						 
@@ -614,13 +614,13 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	   break;
 						    } else {
-						    	printf("Bu koltuk seÁilemez.\n");
+						    	printf("Bu koltuk se√ßilemez.\n");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 					 }
@@ -671,11 +671,11 @@ int main() {
 				}
 				
 				
-				 // KOLTUK SE«›M›
-				 // seÁilemeyen say˝lar˝ tercih edemez
+				 // KOLTUK SE√á√ùM√ù
+				 // se√ßilemeyen say√Ωlar√Ω tercih edemez
 				 int secilenKoltukNumarasi;
 				 
-				 printf("\n L¸tfen Koltuk SeÁiniz: ");
+				 printf("\n L√ºtfen Koltuk Se√ßiniz: ");
 				 scanf("%d", &secilenKoltukNumarasi);
 				
 				 int secilebilirMi = 0;
@@ -686,13 +686,13 @@ int main() {
 				 }
 				 
 				 if(secilebilirMi == 0) {
-				 	printf("Bu koltuk seÁilemez.\n");
+				 	printf("Bu koltuk se√ßilemez.\n");
 				 	
 				 	
 				 } else {
 				 	
 				 	if(secilenKoltukNumarasi % 2 == 0) {
-				 		// secilen koltuk Áift numarali
+				 		// secilen koltuk √ßift numarali
 				 		int doluKoltuklardaVarMi = 0;
 				 		int doluSorguIndisi;
 				 		for(int i = 0; i < 40; i++) {
@@ -704,13 +704,13 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	  printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	  printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	  break;
 						    } else {
-						    	printf("Bu koltuk seÁilemez.\n");
+						    	printf("Bu koltuk se√ßilemez.\n");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 						 
@@ -729,13 +729,13 @@ int main() {
 						 
 						 if(doluKoltuklardaVarMi == 1) {
 						 	if(cinsiyetList[doluSorguIndisi] == cinsiyet) {
-						 	   printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	   printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 								break; 
 						    } else {
-						    	printf("Bu koltuk seÁilemez.\n");
+						    	printf("Bu koltuk se√ßilemez.\n");
 							}
 						 } else {
-						 	printf("\n -> Rezervasyonunuz al˝nm˝˛t˝r iyi g¸nler dileriz...");
+						 	printf("\n -> Rezervasyonunuz al√Ωnm√Ω√æt√Ωr iyi g√ºnler dileriz...");
 						 	break;
 						 }
 					 }
@@ -756,7 +756,7 @@ int main() {
     	
 
 	} else if(yanit[0] == 'h' || yanit[0] == 'H') {
-		// ›yi G¸nler Dileriz.
+		// √ùyi G√ºnler Dileriz.
 		system("cls");
 		goodBye();
 	} else {
